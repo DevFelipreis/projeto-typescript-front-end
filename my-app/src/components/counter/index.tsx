@@ -12,7 +12,7 @@ function Counter({ title, initialValue }: Props) {
     function handleChanceValue(value: number) {
         const newValue = count + (value);
 
-        if (newValue <= 0) {
+        if (newValue < 0) {
             return;
         }
 
